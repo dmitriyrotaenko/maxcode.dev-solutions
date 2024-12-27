@@ -1,10 +1,4 @@
-/*
-Реализуйте класс HttpRouter, который умеет обрабатывать http-запросы. 
-Класс должен поддерживать всего два метода: addHandler и runRequest. 
-С помощью addHandler можно добавить функцию, которая должна вызываться для определенного эндпоинта и http-метода. 
-С помощью runRequest можно «сделать запрос».
-Если соответствующего эндпоинта или метода нет, runRequest возвращает строку "Error 404: Not Found".
-*/ 
+// Условие и примеры https://maxcode.dev/problems/http-router/
 
 class HttpRouter {
   constructor() {
