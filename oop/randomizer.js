@@ -25,7 +25,7 @@ class Randomizer {
 	}
 
 	pickRandomNum() {
-		return Math.floor(Math.random() * (this.end - this.start + 1) + this.start)
+		return Math.floor(Math.random() * (this.end - this.start + 1) + this.start);
 	}
 
 	_isInputValid(...range) {
