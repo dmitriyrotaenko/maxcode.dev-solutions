@@ -9,15 +9,11 @@ function Tuple(...items) {
 }
 
 Tuple.prototype.equals = function(otherInstance) {
-	if(!(otherInstance instanceof Tuple)) {
-		return false;
-	}
-
-	if(otherInstance.items.length !== this.items.length) {
-		return false;
-	}
-
-	if(!otherInstance.items.every(item => this.items.includes(item))) {
+	if(
+		!(otherInstance instanceof Tuple) ||
+		otherInstance.items.length !== this.items.length ||
+		!otherInstance.items.every(item => this.items.includes(item))
+		) {
 		return false;
 	}
 
