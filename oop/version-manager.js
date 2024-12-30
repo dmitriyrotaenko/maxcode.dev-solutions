@@ -1,3 +1,4 @@
+// https://maxcode.dev/problems/version-manager/
 class VersionManager {
 	constructor(initialVersion = '0.1.0') {
 		this.versions = [initialVersion];
@@ -43,28 +44,14 @@ class VersionManager {
 	}
 }
 
-const vm = new VersionManager();
+const vm = new VersionManager("2.0.3");
 
 console.log(
   vm
-		.major() // 1.0.0
-		.patch()
-		.patch()
-		.patch()
-		.minor()
-		.rollback()
-		.patch()
-		.release()
-		// .patch() // 1.0.1
-		// .patch() // 1.0.2
-		// .patch() // 1.0.3
-		// .minor() // 1.1.0
-		// .rollback() // 1.0.3
-		// .patch() // 1.0.4
-		// .release()
+    .major()     // "3.0.0"
+    .minor()     // "3.1.0"
+    .minor()     // "3.2.0"
+    .minor()     // "3.3.0"
+    .patch()     // "3.3.1"
+    .release()
 );
-
-
-// 1. кол на метку
-// 2. нет диспелов (Медная, кецуми, соби)
-// 3. SPY + /assist must have
