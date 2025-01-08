@@ -5,9 +5,9 @@ class BrowserHistory {
 	}
 
 	visit(url) {
-		this.history = this.history.slice(0, this.urlPointer + 1);
-		this.history.push(url);
 		this.urlPointer++;
+		this.history = this.history.slice(0, this.urlPointer);
+		this.history.push(url);
 
 		return url;
 	}
