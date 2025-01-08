@@ -1,4 +1,4 @@
-function Person(firstName, lastName) {
+function createPerson(firstName, lastName) {
   return Object.defineProperty({
 		firstName,
 		lastName
