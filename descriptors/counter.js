@@ -1,3 +1,5 @@
+// Задача https://maxcode.dev/problems/counter/
+
 function createCounter() {
 	let value = 0;
 	return Object.defineProperty({}, 'count', {

@@ -1,3 +1,5 @@
+// Задача https://maxcode.dev/problems/fullname/
+
 function createPerson(firstName, lastName) {
   return Object.defineProperty({
 		firstName,
