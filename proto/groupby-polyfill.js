@@ -1,13 +1,15 @@
 function groupBy(iterable, cb) {
-  const res = Object.create(null);
+  const groups = Object.create(null);
+	let idx = 0;
 
-  for(const [idx, item] of Object.entries(Array.from(iterable))) {
+  for(const item of iterable) {
 		const key = String(cb(item, idx));
-    res[key] ??= [];
-    res[key].push(item);
+    groups[key] ??= [];
+    groups[key].push(item);
+		idx++;
   }
 
-  return res;
+  return groups;
 }
 
 console.log(groupBy(
