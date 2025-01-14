@@ -3,13 +3,13 @@ Array.prototype.map2 = function(callback, thisArg) {
   let idx = 0;
 
   for(const item of this) {
-		if(idx in this) {
-			result[idx] = callback.call(thisArg ?? null, item, idx, this);
-		}
-		idx++;
-	}
+    if(idx in this) {
+      result[idx] = callback.call(thisArg ?? null, item, idx, this);
+    }
+    idx++;
+  }
 
-	return result;
+  return result;
 }
 
 const a = Array(5);
