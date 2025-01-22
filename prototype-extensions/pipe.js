@@ -1,6 +1,6 @@
 Function.prototype.pipe = function(fn) {
   return arg => {
-    return [this, fn].reduceRight((res, fn) => fn(res), arg)
+    return [this, fn].reduceRight((res, fn) => fn(res), arg);
   }
 };
 
